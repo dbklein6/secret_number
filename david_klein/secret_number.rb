@@ -67,9 +67,10 @@ while i < NUMBER_OF_TRIES
     puts "Congratulations! You were right!"
     won = true
     break
-  elsif guess > SECRET_NUMBER  
+  elsif guess > SECRET_NUMBER
     puts "Nope - too high. Try again."
     i += 1
+
   else 
     puts "Nope - too low. Try again."
     i += 1
@@ -77,7 +78,7 @@ while i < NUMBER_OF_TRIES
 
 end
 
-puts "Thanks for playing, #{won ? "woo!" : "scrub!"}"
+puts "Thanks for playing, #{won ? "woo" : "scrub!"}! The secret number was #{SECRET_NUMBER}."
 
 # if won 
 #   puts "WOO!"
